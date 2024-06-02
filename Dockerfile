@@ -8,6 +8,7 @@ RUN pip install -r /opt/app-root/src/requirements.txt
 # Copy our code from the current folder to /app inside the container
 ADD . /opt/app-root/src
 
+WORKDIR /opt/app-root/src
 # Make port 80 available for links and/or publish
 EXPOSE 8080
 
